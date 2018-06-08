@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>Rock Paper Scissors</h1>
+        <h2>Championship</h2>
+        <h4>Player 1 select option. Click Shoot!</h4>
+        <div id="options">
+
+            <h3>Player 1</h3>
+            <select id='player' name='player'>
+                <option selected value=''></option>
+                <option value='rock'>&#xf255;  Rock</option>
+                <option value='paper'>&#xf256;  Paper</option>
+                <option value='scissors'>&#xf257;  Scissors</option>
+            </select>
+            <h3>Computer</h3>
+            <select id='computer' name='computer'>
+                <option selected value=''></option>
+                <option value='rock'>&#xf255;  Rock</option>
+                <option value='paper'>&#xf256;  Paper</option>
+                <option value='scissors'>&#xf257;  Scissors</option>
+            </select>
+        </div>
+        <div id="button">
+            <button id='shootBtn' onclick="rockPaperScissors()">Shoot</button>
+        </div>
+
+        <div id='resultContainer'>
+            <h3 id='result'></h3>
+            <button id='buttonDone' onclick="resetBoard()">Done</button>
+        </div>
+        <div id='scoreContainer'>
+            <h3 id='score'></h3>
+        </div>
+
+
+
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
