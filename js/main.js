@@ -97,7 +97,7 @@ function checkScore() {
         // Gameover Computer wins
         gameover.innerHTML = 'Game Over Computer Wins!'
 
-    } else if (playScore < 2 && compuerScore < 2) {
+    } else if (playerScore < 2 && computerScore < 2) {
         doneButton.style.display = 'block';
     }
 
