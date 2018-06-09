@@ -38,11 +38,16 @@
 
         <div id='resultContainer'>
             <h3 id='result'></h3>
-            <button id='buttonDone' onclick="resetBoard()">Done</button>
+            <button id='buttonDone' onclick="resetBoard()">Reset</button>
         </div>
         <div id='scoreContainer'>
             <h3 id='score'></h3>
             <h3 id="gameover"></h3>
+            <div id="play_again">
+                <h3>Play again?</h3>
+                <button id='yes' onclick="resetBoard(); resetScore();">Yes</button>
+                <button id='no' onclick="resetBoard(); resetScore(); goodbye();">No</button>
+            </div>
         </div>
 
 

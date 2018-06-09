@@ -38,6 +38,17 @@ body {
     font-size: 12px;
 }
 
+#play_again {
+    display: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+#play_again button {
+    display: inline-block;
+    margin: 10px;
+}
+
 #gameover {
     font-size: 2rem;
 }

@@ -84,18 +84,32 @@ function resetBoard() {
 
 }
 
+function resetScore() {
+    playerScore = 0;
+    computerScore = 0;
+    document.getElementById('play_again').style.display = 'none';
+    document.getElementById('gameover').innerHTML = "";
+    document.getElementById('score').innerHTML = "";
+}
+
+function goodbye() {
+    document.getElementById('gameover').innerHTML = "Thanks for playing. Have a great day!";
+}
+
 function checkScore() {
-    let result = document.getElementById('result')
-    let doneButton = document.getElementById('buttonDone')
-    let gameover = document.getElementById('gameover')
+    let playAgain = document.getElementById('play_again');
+    let doneButton = document.getElementById('buttonDone');
+    let gameover = document.getElementById('gameover');
 
     if (playerScore == 2) {
         // Gameover Player wins
-        gameover.innerHTML = 'Game Over Player Wins!'
+        gameover.innerHTML = 'Game Over Player Wins!';
+        playAgain.style.display = 'block';
 
     } else if (computerScore == 2) {
         // Gameover Computer wins
-        gameover.innerHTML = 'Game Over Computer Wins!'
+        gameover.innerHTML = 'Game Over Computer Wins!';
+        playAgain.style.display = 'block';
 
     } else if (playerScore < 2 && computerScore < 2) {
         doneButton.style.display = 'block';
