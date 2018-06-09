@@ -38,6 +38,10 @@ body {
     font-size: 12px;
 }
 
+#gameover {
+    font-size: 2rem;
+}
+
 select {
     font-family: fontAwesome;
     font-size: 1.5rem;
